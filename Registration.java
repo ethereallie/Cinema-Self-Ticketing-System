@@ -17,7 +17,7 @@ public class Registration extends JFrame{
 
     public Registration() {
         //Menentukan judul aplikasi
-        super ("Formulir Registration");
+        super ("Cinema Self Ticketing System");
         //Menentukan apa yang terjadi jika tombol[x] ditekan
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Menentukan resolusi window/frame
