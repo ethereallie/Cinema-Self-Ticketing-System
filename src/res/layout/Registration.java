@@ -29,7 +29,7 @@ public class Registration extends JFrame{
         //Menentukan apa yang terjadi jika tombol[x] ditekan
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Menentukan resolusi window/frame
-        this.setSize(300, 400);
+        this.setSize(530, 550);
         //menentukan panel mana yang akan dijadikan konten
         this.setContentPane(mainPanel);
         //menentukan jika tombol submit ditekan
