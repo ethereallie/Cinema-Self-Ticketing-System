@@ -33,17 +33,18 @@ public class Registration extends JFrame{
         //menentukan panel mana yang akan dijadikan konten
         this.setContentPane(mainPanel);
         //menentukan jika tombol submit ditekan
-        submitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-               String nama = namaLengkapField.getText();
-               String email = emailField.getText();
-               char[] password = passwordField1.getPassword();
-               char[] ulangPassword = passwordField2.getPassword();
-               JOptionPane.showMessageDialog(null, "Hallo " + nama + " Data Anda Berhasil Terkirim, Silahkan Untuk Login" );
-            }
+        submitButton.addActionListener(e -> {
+           String nama = namaLengkapField.getText();
+           String email = emailField.getText();
+           char[] password = passwordField1.getPassword();
+           char[] ulangPassword = passwordField2.getPassword();
+           JOptionPane.showMessageDialog(null, "Hallo " + nama + " Data Anda Berhasil Terkirim, Silahkan Untuk Login" );
         });
 
+        loginButton.addActionListener(e -> {
+            new Login();
+            this.dispose();
+        });
     }
 
     public static void main(String[] args) {

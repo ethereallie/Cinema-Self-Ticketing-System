@@ -1,21 +1,20 @@
+package src.res.layout;
+
 import javax.swing.*;
 
-public class Login {
+public class Login extends JFrame {
     private JTextField textField1;
     private JPasswordField passwordField1;
     private JButton loginButton;
     private JButton daftarButton;
     private JLabel emaiLabel;
     private JLabel passwordLabel;
+    private JPanel mainPanel;
 
     public Login() {
-        //Menentukan judul aplikasi
-        super ("Cinema Self Ticketing System");
-        //Menentukan apa yang terjadi jika tombol[x] ditekan
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        //Menentukan resolusi window/frame
-        this.setSize(530, 550);
-        //menentukan panel mana yang akan dijadikan konten
+        super("Cinema Self Ticketing System");
         this.setContentPane(mainPanel);
+        this.setSize(530, 550);
+        this.setVisible(true);
     }
 }
