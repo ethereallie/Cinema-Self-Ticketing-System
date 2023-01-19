@@ -4,7 +4,6 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-
 public class Checkout extends JFrame{
 
     Font poppinsBold;
@@ -23,7 +22,9 @@ public class Checkout extends JFrame{
             ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("src/res/font/Poppins-Regular.ttf")));
 
         }
-        catch (IOException | FontFormatException e){}
+        catch (IOException | FontFormatException e){
+            System.out.println(e.getMessage());
+        }
 
         try{
             poppinsBold = Font.createFont(Font.TRUETYPE_FONT, new File("src/res/font/Poppins-Bold.ttf"));
@@ -31,7 +32,9 @@ public class Checkout extends JFrame{
             ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("src/res/font/Poppins-Bold.ttf")));
 
         }
-        catch (IOException | FontFormatException e){}
+        catch (IOException | FontFormatException e){
+            System.out.println(e.getMessage());
+        }
 
         JFrame checkoutFrame = new JFrame("Checkout");
         checkoutFrame.setSize(480, 720);
@@ -48,10 +51,10 @@ public class Checkout extends JFrame{
         //image
         ImageIcon filmImage = new ImageIcon("src/res/image/image1.png");
         JLabel imageLabel = new JLabel(filmImage);
-        imageLabel.setBounds(153,95,144,194);
+        imageLabel.setBounds(153,80,144,194);
 
         //Movie Detail
-        JLabel movieTitle = new JLabel("Star Wars (2030)");
+        JLabel movieTitle = new JLabel("Star Wars (2023)");
         movieTitle.setBounds(50,309,152,27);
         movieTitle.setFont(poppinsRegular.deriveFont(18f));
 
