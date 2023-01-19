@@ -29,9 +29,12 @@ public class Registration extends JFrame{
         //Menentukan apa yang terjadi jika tombol[x] ditekan
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Menentukan resolusi window/frame
-        this.setSize(300, 400);
+        this.setSize(530, 550);
         //menentukan panel mana yang akan dijadikan konten
         this.setContentPane(mainPanel);
+        this.setVisible(true);
+
+
         //menentukan jika tombol submit ditekan
         submitButton.addActionListener(new ActionListener() {
             @Override
@@ -42,6 +45,10 @@ public class Registration extends JFrame{
                char[] ulangPassword = passwordField2.getPassword();
                JOptionPane.showMessageDialog(null, "Hallo " + nama + " Data Anda Berhasil Terkirim, Silahkan Untuk Login" );
             }
+        });
+        loginButton.addActionListener(e -> {
+            new Login();
+            this.dispose();
         });
 
     }
