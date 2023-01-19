@@ -24,7 +24,7 @@ public class Checkout extends JFrame{
         labelTitle.setFont(new Font("Poppins", Font.TYPE1_FONT, 30));
 
         //image
-        ImageIcon filmImage = new ImageIcon("assets/image1.png");
+        ImageIcon filmImage = new ImageIcon("src/res/image/image1.png");
         JLabel imageLabel = new JLabel(filmImage);
         imageLabel.setBounds(153,95,144,194);
 
