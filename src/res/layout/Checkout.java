@@ -4,7 +4,6 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-
 public class Checkout extends JFrame{
 
     Font poppinsBold;
@@ -48,7 +47,7 @@ public class Checkout extends JFrame{
         //image
         ImageIcon filmImage = new ImageIcon("src/res/image/image1.png");
         JLabel imageLabel = new JLabel(filmImage);
-        imageLabel.setBounds(153,95,144,194);
+        imageLabel.setBounds(153,80,144,194);
 
         //Movie Detail
         JLabel movieTitle = new JLabel("Star Wars (2030)");
